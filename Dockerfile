@@ -1,5 +1,5 @@
-FROM golang:1.5.2
-MAINTAINER colin.hom@coreos.com
+FROM ansi/rpi-golang:1.5
+MAINTAINER syou6162@gmail.com
 
 ENV GO15VENDOREXPERIMENT=1
 
@@ -8,7 +8,6 @@ RUN mkdir -p ./src/github.com/Masterminds
 WORKDIR $GOPATH/src/github.com/Masterminds
 RUN git clone https://github.com/Masterminds/glide
 WORKDIR glide
-RUN make bootstrap
 RUN make install
 RUN mkdir -p $GOPATH/src/github.com/coreos
 
