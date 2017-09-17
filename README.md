@@ -1,8 +1,8 @@
-#aws-auth-proxy
+# aws-auth-proxy
 
 [![Docker Repository on Quay](https://quay.io/repository/coreos/aws-auth-proxy/status "Docker Repository on Quay")](https://quay.io/repository/coreos/aws-auth-proxy)
 
-##Installation
+## Installation
 
 pre-reqs:
 * go1.5
@@ -19,7 +19,7 @@ cd aws-auth-proxy
 glide install
 go build github.com/coreos/aws-auth-proxy
 ```
-##Example
+## Example
 
 ```sh
 # aws elasticsearch example
